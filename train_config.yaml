@@ -28,10 +28,11 @@ training:
   max_grad_norm: 1.0
 
 data:
-  max_length: 2048
+  max_length: 2560
   max_svg_tokens: 1536
   train_samples: 219
   valid_samples: 17
+  chat_format: gemma3
 
 early_stopping:
   patience: 3

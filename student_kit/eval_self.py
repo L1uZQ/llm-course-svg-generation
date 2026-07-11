@@ -46,15 +46,13 @@ def load_data(jsonl_path: str):
 
 
 def build_input(system_content: str, user_content: str, tokenizer):
-    """构建chat模板输入"""
-    messages = [
-        {"role": "system", "content": system_content},
-        {"role": "user", "content": user_content},
-    ]
-    return tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True,
+    """构建Gemma 3格式的输入"""
+    # Gemma 3没有独立的system角色，将system内容拼入user turn
+    return (
+        f"<bos><start_of_turn>user\n"
+        f"{system_content}\n\n{user_content}"
+        f"<end_of_turn>\n"
+        f"<start_of_turn>model\n"
     )
 
 

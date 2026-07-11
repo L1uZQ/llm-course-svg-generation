@@ -52,8 +52,8 @@ DEFAULT_CONFIG = {
     "weight_decay": 0.01,
     "max_grad_norm": 1.0,
 
-    # 数据
-    "max_length": 2048,        # 序列最大长度
+    # 数据 (~92%样本在2560以内)
+    "max_length": 2560,        # 序列最大长度
     "max_svg_tokens": 1536,    # SVG部分最大token数
 
     # 保存
@@ -74,9 +74,13 @@ DEFAULT_CONFIG = {
 # ─── 数据集 ────────────────────────────────────────────────────────────────
 
 class SVGDataset(Dataset):
-    """SVG徽标数据集，自动mask提示词部分的loss"""
+    """SVG徽标数据集，使用Gemma 3格式自动mask提示词部分的loss
+    
+    Gemma 3格式:
+    <bos><start_of_turn>user\n{system}\n\n{user}<end_of_turn>\n<start_of_turn>model\n{svg}<end_of_turn><eos>
+    """
 
-    def __init__(self, jsonl_path: str, tokenizer, max_length: int = 2048,
+    def __init__(self, jsonl_path: str, tokenizer, max_length: int = 2560,
                  max_svg_tokens: int = 1536):
         self.tokenizer = tokenizer
         self.max_length = max_length
@@ -91,22 +95,38 @@ class SVGDataset(Dataset):
                 item = json.loads(line)
                 self.examples.append(item["messages"])
 
+    @staticmethod
+    def _format_gemma3(messages, include_assistant=True):
+        """将messages格式化为Gemma 3的对话文本"""
+        system = messages[0]["content"]
+        user = messages[1]["content"]
+
+        # 构建prompt部分
+        prompt = (
+            f"<bos><start_of_turn>user\n"
+            f"{system}\n\n{user}"
+            f"<end_of_turn>\n"
+            f"<start_of_turn>model\n"
+        )
+
+        if include_assistant and len(messages) > 2:
+            assistant = messages[2]["content"]
+            full = f"{prompt}{assistant}<end_of_turn><eos>"
+            return full, prompt
+        return prompt, prompt
+
     def __len__(self):
         return len(self.examples)
 
     def __getitem__(self, idx):
         messages = self.examples[idx]
 
-        # 构建chat模板（使用tokenizer内置模板）
-        text = self.tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=False,
-        )
+        # 使用Gemma 3格式构建文本
+        full_text, prompt_text = self._format_gemma3(messages)
 
         # Tokenize全序列
         full_encoding = self.tokenizer(
-            text,
+            full_text,
             truncation=True,
             max_length=self.max_length,
             padding=False,
@@ -115,16 +135,7 @@ class SVGDataset(Dataset):
         input_ids = full_encoding["input_ids"][0]
         attention_mask = full_encoding["attention_mask"][0]
 
-        # 构建labels: 先全部设为-100（忽略），再只对SVG部分计算loss
-        labels = torch.full_like(input_ids, -100)
-
-        # 找到assistant标记的位置（SVG开始的标记）
-        # 用tokenizer的chat template来定位
-        prompt_text = self.tokenizer.apply_chat_template(
-            messages[:-1],  # system + user only
-            tokenize=False,
-            add_generation_prompt=True,
-        )
+        # Tokenize prompt部分以定位SVG起始
         prompt_encoding = self.tokenizer(
             prompt_text,
             truncation=True,
@@ -134,10 +145,10 @@ class SVGDataset(Dataset):
         )
         prompt_len = prompt_encoding["input_ids"].shape[1]
 
-        # 将SVG部分（assistant回复）设为可学习
-        svg_start = prompt_len
+        # 构建labels: 全部先设为-100，只对SVG部分计算loss
+        labels = torch.full_like(input_ids, -100)
+        svg_start = min(prompt_len, len(input_ids))
         svg_end = min(svg_start + self.max_svg_tokens, len(input_ids))
-
         labels[svg_start:svg_end] = input_ids[svg_start:svg_end].clone()
 
         return {
