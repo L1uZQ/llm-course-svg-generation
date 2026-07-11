@@ -52,9 +52,9 @@ DEFAULT_CONFIG = {
     "weight_decay": 0.01,
     "max_grad_norm": 1.0,
 
-    # 数据 (~92%样本在2560以内)
-    "max_length": 2560,        # 序列最大长度
-    "max_svg_tokens": 1536,    # SVG部分最大token数
+    # 数据 (87%样本在1536以内，适配8GB显存)
+    "max_length": 1536,        # 序列最大长度
+    "max_svg_tokens": 1024,    # SVG部分最大token数
 
     # 保存
     "output_dir": "adapter",
@@ -65,9 +65,9 @@ DEFAULT_CONFIG = {
     # 早停
     "early_stopping_patience": 3,
 
-    # 混合精度
-    "bf16": True,
-    "fp16": False,
+    # 混合精度 (RTX3060用fp16更稳定)
+    "bf16": False,
+    "fp16": True,
 }
 
 
@@ -249,6 +249,7 @@ def train(config: dict):
         trust_remote_code=True,
     )
     model.config.use_cache = False  # 训练时禁用KV cache
+    model.gradient_checkpointing_enable()  # 节省显存
 
     # 3. 应用LoRA
     print("[3/5] Applying LoRA...")
