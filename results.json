@@ -1,0 +1,292 @@
+{
+  "base": {
+    "average_score": 0.06,
+    "num_samples": 17,
+    "samples": [
+      {
+        "index": 0,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.6834,
+        "gen_time_sec": 80.63
+      },
+      {
+        "index": 1,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.637,
+        "gen_time_sec": 13.84
+      },
+      {
+        "index": 2,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.678,
+        "gen_time_sec": 12.55
+      },
+      {
+        "index": 3,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.6964,
+        "gen_time_sec": 76.46
+      },
+      {
+        "index": 4,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.7015,
+        "gen_time_sec": 77.73
+      },
+      {
+        "index": 5,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.6834,
+        "gen_time_sec": 77.11
+      },
+      {
+        "index": 6,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.6991,
+        "gen_time_sec": 76.83
+      },
+      {
+        "index": 7,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.695,
+        "gen_time_sec": 77.01
+      },
+      {
+        "index": 8,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.6436,
+        "gen_time_sec": 77.54
+      },
+      {
+        "index": 9,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.7015,
+        "gen_time_sec": 77.52
+      },
+      {
+        "index": 10,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.6553,
+        "gen_time_sec": 77.14
+      },
+      {
+        "index": 11,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.688,
+        "gen_time_sec": 78.01
+      },
+      {
+        "index": 12,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.6159,
+        "gen_time_sec": 77.14
+      },
+      {
+        "index": 13,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.6853,
+        "gen_time_sec": 77.2
+      },
+      {
+        "index": 14,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.7053,
+        "gen_time_sec": 77.26
+      },
+      {
+        "index": 15,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.7053,
+        "gen_time_sec": 77.54
+      },
+      {
+        "index": 16,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SVG: a single <svg ...>...</svg> element with an xmlns and viewBox=\"0 0 256 256\". No prose, no markdown, no code fences.\n- Compose centered, content roughly within 16..240. Use a small cohesive palette.\n- Put gradients/filters in <defs>; use vector primitives only (<path>, <circle>, <ellipse>, <rect>,...",
+        "score": 0.06,
+        "target_score": 0.6826,
+        "gen_time_sec": 77.28
+      }
+    ]
+  },
+  "reward_function": "student_kit/reward.py",
+  "eval_config": {
+    "deterministic": true,
+    "max_new_tokens": 2048
+  },
+  "fine_tuned": {
+    "average_score": 0.4883,
+    "num_samples": 17,
+    "samples": [
+      {
+        "index": 0,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><radialGradient id=\"badgeGrad\" cx=\"50%\" cy=\"45%\" r=\"60%\"><stop offset=\"0%\" stop-color=\"#FBF3E3\" stop-opacity=\"0.55\"/><stop offset=\"100%\" stop-color=\"#FBF3E3\" stop-opacity=\"0\"/></radialGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"url(#badgeGrad)\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"1.5\" opacity=\"0.5\"/><g><pat...",
+        "score": 0.4396,
+        "target_score": 0.6834,
+        "gen_time_sec": 122.94
+      },
+      {
+        "index": 1,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#F2994A\"/><defs><radialGradient id=\"sunGrad\" cx=\"50%\" cy=\"45%\" r=\"65%\"><stop offset=\"0%\" stop-color=\"#E8ECEF\"/><stop offset=\"100%\" stop-color=\"#F2994A\"/></radialGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#1F4E79\" stroke-width=\"2.5\"/><circle cx=\"128\" cy=\"128\" r=\"98\" fill=\"none\" stroke=\"#1F4E79\" stroke-width=\"2.5\"/><circle cx=\"128\" cy=\"128\" r=\"98\" fi...",
+        "score": 0.692,
+        "target_score": 0.637,
+        "gen_time_sec": 50.1
+      },
+      {
+        "index": 2,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><linearGradient id=\"bottleGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F4A2E8\"/><stop offset=\"1\" stop-color=\"#FBF3E3\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"2.5\"/><circle cx=\"128\" cy=\"128\" r=\"98\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"2.5\"/><circle cx=\"128\" cy=\"128\" r=\"98\" f...",
+        "score": 0.437,
+        "target_score": 0.678,
+        "gen_time_sec": 123.46
+      },
+      {
+        "index": 3,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#2D2A26\"/><defs><linearGradient id=\"cupGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#2E8A2B\"/><stop offset=\"1\" stop-color=\"#2D2A26\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"108\" fill=\"none\" stroke=\"#FF6F59\" stroke-width=\"2\"/><circle cx=\"128\" cy=\"128\" r=\"96\" fill=\"none\" stroke=\"#FF6F59\" stroke-width=\"2\"/><circle cx=\"128\" cy=\"128\" r=\"96\" fill=\"ur...",
+        "score": 0.4821,
+        "target_score": 0.6964,
+        "gen_time_sec": 127.5
+      },
+      {
+        "index": 4,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><linearGradient id=\"orangeGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F4A2E8\"/><stop offset=\"1\" stop-color=\"#FBF3E3\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"3\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"3\"/><g stroke=\"#1F2E2E\" stroke-width=\"1.5\"...",
+        "score": 0.6585,
+        "target_score": 0.7015,
+        "gen_time_sec": 52.01
+      },
+      {
+        "index": 5,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#F4A261\"/><defs><linearGradient id=\"skyGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F4A261\"/><stop offset=\"1\" stop-color=\"#8ECAE6\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"#F4A261\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#5B8FB9\" stroke-width=\"3\"/><g stroke=\"#2A4759\" stroke-width=\"1.5\" opacity=\"0.55\"><path d=\"M128 170 ...",
+        "score": 0.6985,
+        "target_score": 0.6834,
+        "gen_time_sec": 47.9
+      },
+      {
+        "index": 6,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><linearGradient id=\"dropGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F4A3E8\"/><stop offset=\"1\" stop-color=\"#FBF3E3\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"2\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"2\"/><g><path d=\"M128 178 C100 160 90 150 88 ...",
+        "score": 0.4056,
+        "target_score": 0.6991,
+        "gen_time_sec": 123.75
+      },
+      {
+        "index": 7,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#F4A83B\"/><defs><linearGradient id=\"badgeGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#2B2B2B\"/><stop offset=\"1\" stop-color=\"#2B2B2B\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"url(#badgeGrad)\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#F4A83B\" stroke-width=\"3\"/><g fill=\"none\" stroke=\"#F4A83B\" stroke-width=\"1.5\" stroke-line...",
+        "score": 0.486,
+        "target_score": 0.695,
+        "gen_time_sec": 124.14
+      },
+      {
+        "index": 8,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><defs><radialGradient id=\"bgGrad\" cx=\"50%\" cy=\"45%\" r=\"65%\"><stop offset=\"0%\" stop-color=\"#f2e2f2\"/><stop offset=\"100%\" stop-color=\"#f2e2f2\"/></radialGradient></defs><circle cx=\"128\" cy=\"128\" r=\"112\" fill=\"url(#bgGrad)\"/><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#f2e2f2\" stroke-width=\"1.5\" opacity=\"0.5\"/><g><path d=\"M128 178 C128 190 150 196 178 216 C178 216 150 216 128 216 C128 216 150 216 128 216 Z\" fill=\"url(#logo)\"/><p...",
+        "score": 0.4012,
+        "target_score": 0.6436,
+        "gen_time_sec": 124.07
+      },
+      {
+        "index": 9,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><linearGradient id=\"archGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F4A2E8\"/><stop offset=\"1\" stop-color=\"#FBF3E3\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"url(#archGrad)\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#FBF3E3\" stroke-width=\"1.5\" opacity=\"0.55\"/><g stroke=\"#FBF3E3\" stroke-width=\"1.5\" opacity=...",
+        "score": 0.4435,
+        "target_score": 0.7015,
+        "gen_time_sec": 124.03
+      },
+      {
+        "index": 10,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><linearGradient id=\"scissors\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F5E3E8\"/><stop offset=\"1\" stop-color=\"#FBF3E8\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"3\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"3\"/><g stroke=\"#1F2E2E\" stroke-width=\"1.5\" o...",
+        "score": 0.6202,
+        "target_score": 0.6553,
+        "gen_time_sec": 49.48
+      },
+      {
+        "index": 11,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><radialGradient id=\"sunGrad\" cx=\"50%\" cy=\"45%\" r=\"65%\"><stop offset=\"0%\" stop-color=\"#FBF3E3\" stop-opacity=\"0.55\"/><stop offset=\"100%\" stop-color=\"#FBF3E3\" stop-opacity=\"0\"/></radialGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"2.5\" opacity=\"0.5\"/><circle cx=\"128\" cy=\"128\" r=\"98\" fill=\"none\" stroke=\"#1F2E2E\" stro...",
+        "score": 0.4057,
+        "target_score": 0.688,
+        "gen_time_sec": 124.77
+      },
+      {
+        "index": 12,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FFF8F0\"/><defs><linearGradient id=\"plateGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#2EC4B6\"/><stop offset=\"1\" stop-color=\"#2EC4B6\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#1B1B1E\" stroke-width=\"3\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#1B1B1E\" stroke-width=\"3\"/><g><path d=\"M128 178 C128 128 150 108 1...",
+        "score": 0.4426,
+        "target_score": 0.6159,
+        "gen_time_sec": 124.03
+      },
+      {
+        "index": 13,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><linearGradient id=\"goldGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#F4A2E8\"/><stop offset=\"1\" stop-color=\"#FBF3E3\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"url(#goldGrad)\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#FBF3E3\" stroke-width=\"2.5\"/><g fill=\"none\" stroke=\"#FBF3E3\" stroke-width=\"1.5\" stroke-line...",
+        "score": 0.4439,
+        "target_score": 0.6853,
+        "gen_time_sec": 124.37
+      },
+      {
+        "index": 14,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><linearGradient id=\"spineGrad\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#FBF3E3\"/><stop offset=\"1\" stop-color=\"#0A4A2C\"/></linearGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#1B2A2A\" stroke-width=\"3\"/><circle cx=\"128\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#1B2A2A\" stroke-width=\"3\"/><g><path d=\"M128 178 C100 150 90 128 88...",
+        "score": 0.4471,
+        "target_score": 0.7053,
+        "gen_time_sec": 124.36
+      },
+      {
+        "index": 15,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><radialGradient id=\"haloGrad\" cx=\"50%\" cy=\"45%\" r=\"65%\"><stop offset=\"0%\" stop-color=\"#FBF3E3\" stop-opacity=\"0.55\"/><stop offset=\"100%\" stop-color=\"#FBF3E3\" stop-opacity=\"0\"/></radialGradient></defs><circle cx=\"128\" cy=\"128\" r=\"108\" fill=\"url(#haloGrad)\"/><circle cx=\"128\" cy=\"128\" r=\"108\" fill=\"none\" stroke=\"#FBF3E3\" stroke-width=\"1.5\" opacity=\"0.5\"/><g><poly...",
+        "score": 0.4176,
+        "target_score": 0.7053,
+        "gen_time_sec": 123.81
+      },
+      {
+        "index": 16,
+        "prompt": "You are an expert logo designer working in clean, scalable vector graphics. Given a description of a logo's visual elements, output ONE complete SVG document for the logo.\n\nRules:\n- Output ONLY the SV...",
+        "generated_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\"><rect x=\"-9999\" y=\"-9999\" width=\"19998\" height=\"19998\" fill=\"#FBF3E3\"/><defs><radialGradient id=\"leafGrad\" cx=\"50%\" cy=\"45%\" r=\"65%\"><stop offset=\"0%\" stop-color=\"#FBF3E3\" stop-opacity=\"0.55\"/><stop offset=\"100%\" stop-color=\"#FBF3E3\" stop-opacity=\"0\"/></radialGradient></defs><circle cx=\"128\" cy=\"128\" r=\"104\" fill=\"none\" stroke=\"#1F2E2E\" stroke-width=\"1.5\" opacity=\"0.5\"/><circle cx=\"128\" cy=\"128\" r=\"98\" fill=\"none\" stroke=\"#1F2E2E\" str...",
+        "score": 0.3798,
+        "target_score": 0.6826,
+        "gen_time_sec": 125.01
+      }
+    ],
+    "improvement": 0.4283
+  }
+}
