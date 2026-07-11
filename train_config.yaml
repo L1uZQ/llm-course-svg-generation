@@ -1,0 +1,40 @@
+# 训练配置超参数
+# 用于记录和复现训练过程
+model:
+  name: gemma-3-270m
+  source: modelscope
+  local_dir: gemma3-270m
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+training:
+  learning_rate: 2e-4
+  num_epochs: 5
+  batch_size: 1
+  gradient_accumulation_steps: 8
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+
+data:
+  max_length: 2048
+  max_svg_tokens: 1536
+  train_samples: 219
+  valid_samples: 17
+
+early_stopping:
+  patience: 3
+  monitor: val_loss
+
+precision: bf16
