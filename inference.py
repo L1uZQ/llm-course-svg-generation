@@ -10,6 +10,8 @@ inference.py — 用微调后的模型生成 SVG 徽标
 import argparse
 import sys
 import torch
+import tempfile
+import webbrowser
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
@@ -93,11 +95,25 @@ def generate_svg(model, tokenizer, prompt_text: str,
 
 
 def _extract_svg(text: str) -> str:
-    """从生成文本中提取 SVG 标签"""
+    """从生成文本中智能提取/修复 SVG"""
     import re
+
+    # 1. 优先匹配完整的 <svg>...</svg>
     match = re.search(r'<svg[\s\S]*?</svg>', text, re.IGNORECASE)
     if match:
         return match.group(0)
+
+    # 2. 有 </svg> 结尾但缺少开头 <svg> — 自动补
+    if re.search(r'</svg>\s*$', text.strip(), re.IGNORECASE):
+        return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">\n' + text.strip()
+
+    # 3. 完全没有 svg 标签 — 用一个最小框架包住
+    cleaned = text.strip()
+    # 去掉非 SVG 的前导文本
+    cleaned = re.sub(r'^.*?(?=<(circle|rect|path|g|defs|line|polygon|ellipse))', '', cleaned, count=1, flags=re.IGNORECASE | re.DOTALL)
+    if cleaned:
+        return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">\n' + cleaned + '\n</svg>'
+
     return text.strip()
 
 
@@ -119,6 +135,8 @@ def main():
                         help="采样温度 (0=确定性, 1=更多样)")
     parser.add_argument("--max-tokens", type=int, default=2048,
                         help="最大生成 token 数")
+    parser.add_argument("--open", action="store_true",
+                        help="生成后在浏览器中预览")
     args = parser.parse_args()
 
     # 加载模型
@@ -195,12 +213,23 @@ def main():
                        max_tokens=args.max_tokens,
                        temperature=args.temperature)
 
-    if args.output:
-        with open(args.output, "w", encoding="utf-8") as f:
-            f.write(svg)
-        print(f"Saved to {args.output} ({len(svg)} chars)")
-    else:
-        print(svg)
+    if not args.output:
+        # 自动保存到临时文件以便 --open
+        import tempfile
+        tmp = tempfile.NamedTemporaryFile(suffix=".svg", delete=False)
+        tmp.write(svg.encode("utf-8"))
+        tmp.close()
+        args.output = tmp.name
+        print(f"Saved to {args.output}")
+
+    with open(args.output, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"({len(svg)} chars)")
+
+    if args.open:
+        import webbrowser
+        webbrowser.open(args.output)
+        print(f"Opened in browser")
 
 
 if __name__ == "__main__":
